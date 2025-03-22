@@ -31,7 +31,7 @@ async function handleGenerateNewUrl(req, res) {
         createdAt: Date.now()
     });
 
-  return res.json({ success: true, shortUrl: `http://localhost:3000/${shortID}` });
+  return res.json({ success: true, shortUrl: `https://shatty.onrender.com/${shortID}` });
 }
 
 async function handleGetAnalytics(req, res) {
