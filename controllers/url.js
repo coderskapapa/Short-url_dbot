@@ -46,6 +46,9 @@ async function handleGetAnalytics(req, res) {
 async function handleDeleteUrl(req, res) {
     const shortId = req.params.shortId;
     await URL.deleteOne({ shortId });
+      if (!entry) {
+    return res.status(404).send("Short URL not found"); // Or render a 404 page
+  }
     res.redirect("/");
 }
 
