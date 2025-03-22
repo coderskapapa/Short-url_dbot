@@ -10,9 +10,6 @@
 
 <body>
     <h1>Url Shortner</h1>
-    <% if (locals.id) { %>
-        <p>URL Generated: http://localhost:3000/url/<%= id %></p>
-    <% } %>
 
     <% if (locals.error) { %>
         <p style="color: red;"><%= error %></p>
